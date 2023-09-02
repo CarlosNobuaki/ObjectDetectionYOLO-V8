@@ -23,13 +23,13 @@ for i in range(len(class_list)):
     detection_colors.append((b, g, r))
 
 # load a pretrained YOLOv8n model
-model = YOLO("/home/carlos/Área de Trabalho/Workspace/ObjDetection/zip/yolov8x.pt", "v8")
+model = YOLO("/home/carlos/Área de Trabalho/Workspace/ObjDetection/models/yolov8n.pt", "v8")
 
 # Vals to resize video frames | small frame optimise the run
 frame_wid = 640
 frame_hyt = 480
 
-cap = cv2.VideoCapture('/home/carlos/Área de Trabalho/Workspace/ObjDetection/inference/videos/quadrilha.mp4')
+cap = cv2.VideoCapture('/home/carlos/Área de Trabalho/Workspace/ObjDetection/inference/videos/2 minutos nas ruas de Izumo.mp4')
 #cap = cv2.VideoCapture("/home/carlos/Área de Trabalho/Workspace/ObjDetection/inference/videos/The famous Shibuya crossing - 90 seconds.mp4")
 
 if not cap.isOpened():
